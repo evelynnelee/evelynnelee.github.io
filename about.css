@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+  background-color: #FEFEFE;
+  /*background-color: #F2E1F2;*/
+/*  background-image: url(background.jpg); */
+}
+
+footer {
+	position: relative;
+	height: auto;
+    width: 100%;
+    margin: auto;
+}
+
+p.copyright {
+	position: absolute;
+  padding-top: 50px;
+	width: 100%;
+    color: black;
+    line-height: 40px;
+    font-size: 0.7em;
+	text-align: center;
+	bottom:0;
+  top: 0;
+}
+
+#logo{
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Montserrat";
+  font-size: 34px;
+}
+
+nav {
+	/*background-color: #fefefe;*/
+	text-align: center;
+	grid-column: 1/4;
+	grid-row: 1/2;
+	font-family: "Montserrat";
+	font-size: 10px;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 12px;
+	padding: .25em 1em;
+	text-transform: uppercase;
+}
+
+nav li:not(:last-child) {
+	border-right: 1px solid #666;
+}
+
+nav a {
+	border-bottom: 3px solid #666;
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover {
+	border-bottom: 3px solid #598392;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-row: auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.intro{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Poppins";
+}
+
+.social-icons {
+  text-align: center;
+  }
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:50px;
+  height:50px;
+  margin-right: 20px;
+}
