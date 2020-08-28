@@ -1,54 +1,52 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Inter);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body{
-  background-color: #FEFEFE;
-  /*background-color: #F2E1F2;*/
-/*  background-image: url(background.jpg); */
-}
-
-#logo{
-  text-align: center;
-  letter-spacing: 3px;
+  background-color: #FFFCF7;
   font-family: "Montserrat";
-  font-size: 34px;
-}
-
-h1, h2{
-  font-family: "Poppins";
-  letter-spacing: 1px;
-}
-
-p, ul, li{
-  font-family: "Inter";
-  font-size: 16px;
 }
 
 footer {
 	position: relative;
 	height: auto;
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
 }
 
-p.copyright {
-	position: absolute;
-  padding-top: 50px;
-	width: 100%;
-    color: black;
-    line-height: 40px;
-    font-size: 0.7em;
-	text-align: center;
-	bottom:0;
-  top: 0;
+header img{
+  height: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1{
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Montserrat";
+  margin-top: 0px;
+}
+
+#title{
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 50px;
+}
+
+h2{
+  font-family: "Montserrat";
+  letter-spacing: 1px;
 }
 
 
+p, ul, li{
+  font-family: "Montserrat";
+  font-size: 16px;
+}
 
 nav {
-	/*background-color: #fefefe;*/
 	text-align: center;
 	grid-column: 1/4;
 	grid-row: 1/2;
@@ -81,133 +79,135 @@ nav a:hover {
 	border-bottom: 3px solid #598392;
 }
 
-.banner{
-  background-color: #F6343F;
-  margin: 20px -10px 20px -10px;
-}
 
-.grid{
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-.overview{
-  grid-column: 1/4;
-  grid-row: 1/2;
-  position: relative;
-  padding: 25px;
-  margin: auto;
-  width: 50%;
-}
-.teampic{
-  grid-column: 1/2;
-  grid-row: 2/3;
-  position: relative;
-  padding: 25px;
-  margin: auto;
-  width: 25%;
-}
-.role{
-  grid-column: 2/4;
-  grid-row: 2/3;
-  position: relative;
-  margin: auto;
-  width: 70%;
-  background-color: #F6343F;
-  border-radius: 10px;
-  padding: 40px;
-  color: #fefefe;
-}
-.data{
-  grid-column: 1/4;
-  grid-row: 3/4;
-  position: relative;
-  padding: 25px;
-  margin: auto;
-  width: 50%;
-}
-.spreadsheets{
-  grid-column: 1/4;
-  grid-row: 4/5;
-  position: relative;
-  padding: 25px;
-  margin: auto;
-  width: 50%;
-}
-
-.errors{
-  grid-column: 1/4;
-  grid-row: 5/6;
-  position: relative;
-  padding: 25px;
-  margin: auto;
-  width: 75%;
-}
-.errorpics{
-  grid-column: 1/6;
-  grid-column-gap: 120px;
-  width: 100%;
-}
-.epiccap{
-  grid-column: 1/6;
-  grid-column-gap: 120px;
-  width: 100%;
-  font-size: 11px;
-  text-align: center;
-  font-family: "Raleway";
-}
-.rdcap{
-  grid-column: 1/4;
-  font-size: 11px;
-  text-align: center;
-  font-family: "Raleway";
-  width: 92%;
-}
-.nested{
+.introgrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-content: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  ".roles .strategies .tools";
+  text-align: left;
+  margin: 50px;
 }
 
-.redesign{
-  grid-column: 1/4;
-  grid-row: 6/7;
-  position: relative;
-  padding: 25px;
-  margin: auto;
-  width: 50%;
+.overview{
+  margin: 50px;
 }
 
-
-
-.nested2{
+.dataintro{
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  padding: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  ".datacollection .datapic";
+  text-align: left;
+  margin: 50px;
 }
 
-.conclusion{
-  grid-column: 2/4;
-  grid-row: 7/8;
-  position: relative;
-  padding: 25px;
-  margin: auto;
-  width: 80%;
-
+.spreadsheets{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ".data1 .data2";
+  margin: 50px;
 }
-.doneimg{
-  grid-column: 1/1;
-  grid-row: 7/8;
-  position: relative;
-  padding: 15px;
-  margin: auto;
+
+.errorgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  ".e1 .e2 .e3";
+  align-items:center;
+  text-align: center;
+}
+.designspace{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  ".dsexplanation .dspic";
+  text-align: left;
+  margin: 50px;
+}
+.dspic:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+.examplegrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  " .pm .goodys .dd .ue ";
+  text-align: center;
+  margin-left: 50px;
+}
+
+.rd {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  ".rdpt1 .rdpt2";
+  text-align: center;
+  margin-left: 50px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  ".rdgif .rd2text";
+  text-align: center;
+  margin-left: 50px;
+}
+
+.rdgif{
+  display: inline-block;
+}
+.rd2text{
+  vertical-align: middle;
+  margin-left: 0px;
+  margin-top: 70px;
+  text-align: left;
+}
+.container2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  ".rd3text .rd3gif";
+  text-align: center;
+  margin-left: 50px;
+}
+
+.rd3gif{
+  display: inline-block;
+}
+.rd3text{
+  vertical-align: middle;
+  margin-left: 150px;
+  margin-top: 70px;
+  text-align: left;
 }
